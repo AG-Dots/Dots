@@ -1,0 +1,18 @@
+<div class='board'>
+
+ 
+
+  <div [@listAnimation]="board.Dots.length">
+    <div *ngFor="let dot of board.Dots">
+      <app-dot [dot]='dot'></app-dot>
+    </div>
+
+  </div>
+
+
+  <div *ngIf='board.Lines'>
+      <div *ngFor="let line of board.Lines">
+        <app-line [line]='line'></app-line>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class='line' 
+[class.hovered]="hovered" 
+  (mouseover)="hovered=true"
+  (mouseout)="hovered=false"
+
+[style.top]='line.dot1.y + 3 + "px"'
+ [style.left]='line.dot1.x + 2 + "px"'
+  [style.width]='line.dot2.x - line.dot1.x + lineWidth + "px"'
+    [style.height]='line.dot2.y - line.dot1.y + lineWidth + "px"'>
+    <div [class]="classElement">
+    </div>
+</div>
